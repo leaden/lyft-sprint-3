@@ -6,3 +6,180 @@ Colors:
 #75726C;
 #EDE9E2
 */
+
+
+
+body{
+	
+	font-family: sans-serif;
+	margin:0; 
+	padding:0;
+
+}
+
+.nav {
+	width: 100%;
+	height: 100px;
+	background: #E56385;
+	font-size:20px;
+	display: inline-block;
+	position: fixed;
+	
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
+	left:900px;
+	position: relative;
+	top: 30px;
+	margin-top: 20px;
+	padding: 30px;
+    
+}
+
+.nav a:hover{
+	background-color:#E54E79;
+}
+
+img {
+	width:50px;
+	position: absolute;
+	top: 26px;
+	left: 200px;
+}
+
+.formulario{
+	background-image: url("../img/cropped-Lyft-Promo-Codes-car-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    height: 800px;
+    width: 100%;
+} 
+
+#rectangulo{
+
+	width: 510px;
+	height: 400px;
+	float: right;
+	background: #EDE9E2;
+	margin-top: 250px;
+	padding:50px;
+	box-sizing: border-box;
+		
+}
+
+h1 {
+	
+	color: #00B2A9;
+	
+}
+
+h3 {
+    
+	color:#75726C;
+	font-size: 20px; 
+}
+
+.group{ 
+  position:relative; 
+  margin-bottom:50px; 
+}
+
+input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+input:focus { outline:none; }
+
+/* LABEL ======================================= */
+label{
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+from { background:#5264AE; 
+}
+to { width:0; background:transparent;
+ }
+}
+@keyframes inputHighlighter {
+from { background:#5264AE; }
+to 	{ 
+width:0; background:transparent; 
+}
+
+#boton button{
+	border-radius: 8px;
+	color: #E56385;
+}
