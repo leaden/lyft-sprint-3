@@ -154,7 +154,7 @@ button{
   margin-top: 30px; 
   margin-left:0; 
 }
-#boton-rosa{
+#botonrosa{
   width: 300px;
   height: 50px;
   font-size: 15px;
@@ -196,7 +196,7 @@ p{
   font-weight: 600;
 }
 
-.rec-auto{
+.contenedor{
   
   width: 700px;
   height: 250px;
@@ -209,22 +209,12 @@ p{
   
 }
 
-.coordenada1{
-  position: absolute;
-  display: inline-block;
-  margin-left: 100px;
-  margin-top: 30px;
+#coordenada{
 
+  display: inline-block;
 }
 
-.coordenada2{
-  position: absolute;
-  display: inline-block;
-  margin-left: 100px;
-  margin-top: 30px;
-}
-
-i{
+i {
   font-size: 20px;
   color: gray;
   position: relative;
@@ -276,7 +266,38 @@ footer p{
 }
 
 .social i{
-  width:30px; 
-  height:30px;
+  
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.btn{
+  width:600px ;
+  height:50px;
+  font-size: 20px;
+  background-color: #00B2A9;
+  margin-left: 45px;
 
 }
+
+
+/*#tablero{
+  border: 5px solid #900C3F;
+}
+
+
+/*.casilla{
+  box-sizing: border-box;
+  /*Es mejor con float:left*/
+  /*display:inline-block;
+  background-color: #581845;
+  color: whitesmoke;
+  padding: 10px;
+  font-family: sans-serif;
+  width: 10%;
+  text-align: center;
+  border: 5px #900C3F solid;
+}/*
